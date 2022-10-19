@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="form_calculate">
+        <div class="formtt">
+            <div class="formlogo"><img src="./img/lease-extension-logo.png" alt="logo"></div>
+            <h1 class="leasett">LEASE <br>EXTENSION <br>CALCULATOR<br></h1>
+        </div>
+        <div id="item_form">
+            <div class="">
+                <div class="form-input">
+                    <div class=""><span>Years left on lease: </span></div>
+                    <div class="">
+                        <input id="years" size="5" type="number"> years <input id="months" size="5" type="number">
+                        months
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class=""><span style="font-size:120%;">Ground Rent (average): </span></div>
+                    <div class=""><input class="height" id="groundRent" size="5" type="number">per annum</div>
+                </div>
+                <div class="form-input">
+                    <div class=""> <span style="font-size:120%;">Property Value (if extended)?:</span></div>
+                    <div class=""><input class="height" id="Property_value" size="5" type="number">(£)</div>
+                </div>
+                <div class="form-input btn-group">
+                    <div class=""><button class="form-btn bg-orng">The Process To Extend</button></div>
+                    <div class=""><button class="form-btn bg-greentype" id="calcCost">Calculate the Cost Now</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="result">
+        <div class="res-table">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Unexpired Term</td>
+                        <td> <span id="time">0</span> years</td>
+                    </tr>
+                    <tr>
+                        <td>Extended Lease Value</td>
+                        <td>£ <span id="extended">0</span> </td>
+                    </tr>
+                    <tr>
+                        <td>Annual Ground Rent</td>
+                        <td>£ <span id="ground">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>Yield</td>
+                        <td>7%</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>Total Cost</strong></td>
+                        <td>£<strong id="totalCost">0</strong>  </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- javaScript intrigation -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
