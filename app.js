@@ -19,7 +19,7 @@ const calcCost = () => {
   const groundRent = document.getElementById("groundRent").value;
 
   // convert year
-  const totalTime = convertNumber(years) + convertNumber(months) / 12;
+  const totalTime = parseFloat(convertNumber(years)) + parseFloat(convertNumber(months) / 12);
  
   const lostRent =
     ((1 - 1 / Math.pow(1 + yield / 100, totalTime)) / yield) * 100 * groundRent;
@@ -36,7 +36,7 @@ const calcCost = () => {
   const landCurrentInterest = lostRent + remainingTerm;
 
   // conditional logic
-  const label = 0.99;
+  const label = 1.01;
   let talentedCurrentInterest = 0;
   if (totalTime > 95) {
     talentedCurrentInterest = Property_value * 0.972;
